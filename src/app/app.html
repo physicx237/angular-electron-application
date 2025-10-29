@@ -1,0 +1,9 @@
+@if (isShowVideo) {
+  <video #video autoplay class="video"></video>
+}
+
+<div>ID: {{ peerId }}</div>
+
+<input #peerIdInput />
+
+<button #callButton (click)="call(peerIdInput.value)">Установить соединение</button>
